@@ -1,0 +1,47 @@
+[
+  {
+    "title": "impedit earum doloribus",
+    "description": "Asperiores est asperiores amet eaque illum.",
+    "launchDate": "2021-04-20",
+    "showTimes": [
+      "16:30",
+      "14:00"
+    ]
+  },
+  {
+    "title": "quidem aut sunt",
+    "description": "Ad repellendus perspiciatis deserunt cupiditate esse vel quaerat.",
+    "launchDate": "2022-02-06",
+    "showTimes": [
+      "19:00",
+      "16:30"
+    ]
+  },
+  {
+    "title": "laudantium suscipit ipsum",
+    "description": "Quis mollitia odio minus odit.",
+    "launchDate": "2015-04-07",
+    "showTimes": [
+      "21:30",
+      "21:30"
+    ]
+  },
+  {
+    "title": "necessitatibus ducimus dicta",
+    "description": "Provident voluptas aut.",
+    "launchDate": "2019-12-25",
+    "showTimes": [
+      "16:30",
+      "14:00"
+    ]
+  },
+  {
+    "title": "quasi id placeat",
+    "description": "Laborum vero molestias aliquam eum ad autem sit.",
+    "launchDate": "2021-01-13",
+    "showTimes": [
+      "19:00",
+      "21:30"
+    ]
+  }
+]
