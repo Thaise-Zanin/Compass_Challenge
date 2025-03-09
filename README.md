@@ -103,15 +103,20 @@ docker run -p 3000:3000 api-cinema
 4. A API estará disponível no mesmo endereço: **http://localhost:3000/api/docs** 
 
 ---
-### ✅ Requisitos
 
-Para a execução dos testes funcionais, será necessário o uso do **Postman**.
+### 📌 Requisitos necessários:
 
-#### 📌 Requisitos necessários:
+- **Ferramentas:** GitHub, Visual Studio Code, Jira, Miro, AWS EC2 e Docker;
 
-- Ter a **API Cinema** rodando localmente.
+- **Para os Testes Funcionais:**
 
-- Instalar o **Postman**, ferramenta que será utilizada para realizar os testes.
+   - Realizar a instalação do **Postman**.
+
+- **Para os Testes Não Funcionais:**
+
+   - Garantir que o **K6** e o **Node** estejam instalados.
+
+- **Ambiente configurado com acesso à API**.
 
 ---
 
@@ -132,13 +137,7 @@ Para a execução dos testes funcionais, será necessário o uso do **Postman**.
 - **Testes Negativos:** Simulam entradas inválidas para validar o tratamento de erros.
 
 ---
-### 🔨 Recursos Necessários:
 
-- **Ferramentas:** GitHub, Visual Studio Code, K6, Jira, Miro, Postman, AWS EC2, Docker;
+### 🎉 Agradecimentos:
 
-- **Ambiente configurado com acesso à API.**
-
----
-### 🎉 Agradecimento:
-
-Lauro Dariva Ferneda
+**Lauro Dariva Ferneda**
