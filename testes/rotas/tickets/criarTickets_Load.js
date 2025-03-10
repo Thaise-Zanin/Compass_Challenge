@@ -9,7 +9,7 @@ const baseRest = new BaseRest(base_uri);
 const baseChecks = new BaseChecks();
 
 export const options = {
-    ...testConfig.options.spike,
+    ...testConfig.options.load,
     thresholds: testConfig.PostTickets
 }
 
