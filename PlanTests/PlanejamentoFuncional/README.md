@@ -123,61 +123,61 @@ Apresentação final.
 
 ❌ O administrador envia um **POST para /movies**, o sistema valida os dados e a unicidade do título, cria o filme com um ID único e retorna 201 Created com o ID. **(Não retornar o ID)**
 
-![POST Movies](../assets/postMovies.png)
+![POST Movies](../../assets/postMovies.png)
 
 ---
 ✔️ O usuário faz um **GET em /movies**, e o sistema retorna a lista de filmes com detalhes.
 
-![GET Movies](../assets/getMovies.png)
+![GET Movies](../../assets/getMovies.png)
 
 ---
 ✔️ O usuário faz um **GET em /movies/{id}**, e o sistema retorna os detalhes ou 404 se não existir.
 
-![GET Movies ID](../assets/getMoviesID.png)
+![GET Movies ID](../../assets/getMoviesID.png)
 
 ---
 ✔️ O admin faz um **PUT em /movies/{id}**, o sistema valida, atualiza os detalhes e retorna 200 OK.
 
-![PUT Movies](../assets/putMovies.png)
+![PUT Movies](../../assets/putMovies.png)
 
 ---
 ❌ O admin faz um **DELETE em /movies/{id}**, o sistema remove o filme e retorna 204 No Content. **(Não retorna 204 No Content)**
 
-![DELETE Movies](../assets/deleteMovies.png)
+![DELETE Movies](../../assets/deleteMovies.png)
 
 ---
 ### 🎟️ Tickets
 
 ✔️ O usuário faz um **POST em /tickets** com **movieId, userId, seatNumber, price e showtime**, o sistema valida os dados, cria a reserva com um ID único e retorna 201 Created.
 
-![POST Tickets](../assets/postTickets.png)
+![POST Tickets](../../assets/postTickets.png)
 
 ---
 ✔️ O usuário faz um **GET em /tickets**, e o sistema retorna a lista de tickets com detalhes.
 
-![GET Tickets](../assets/getTickets.png)
+![GET Tickets](../../assets/getTickets.png)
 
 ---
 ❌ Ao tentar realizar um **GET em /tickets{id}**, o sistema **cai**. 
 
-![GET Tickets ID](../assets/getTicketsID.png)
+![GET Tickets ID](../../assets/getTicketsID.png)
 
 ---
 ❌ Ao tentar realizar um **PUT em /tickets{id}**, o sistema **cai**. 
 
-![PUT Tickets](../assets/putTickets.png)
+![PUT Tickets](../../assets/putTickets.png)
 
 ---
 ❌ Ao tentar realizar um **DELETE em /tickets{id}**, o sistema **cai**.
 
-![DELETE Tickets](../assets/deleteTickets.png)
+![DELETE Tickets](../../assets/deleteTickets.png)
 
 ---
 ### 🐞 Bugs Encontrados:
 
 Foi possível criar filmes com o mesmo título e outras informações, embora isso não devesse ser permitido.
 
-![Bug Movies](../assets/Bug.png)
+![Bug Movies](../../assets/Bug.png)
 
 ---
 ### ✅ Sugestão de Melhorias:
@@ -191,8 +191,8 @@ Foi possível criar filmes com o mesmo título e outras informações, embora is
 ---
 ### 📊 Jira e QAlity
 
-![Jira](../assets/Jira.png)
+![Jira](../../assets/Jira.png)
 
 ---
 
-![Gráfico](../assets/Grafico.png)
+![Gráfico](../../assets/Grafico.png)
