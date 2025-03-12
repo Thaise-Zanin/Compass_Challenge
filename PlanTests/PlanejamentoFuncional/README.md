@@ -175,41 +175,41 @@ Apresentação final.
 ---
 ### ⚙️ Testes Automatizados:
 
-##### POST Movies - Esse teste verifica status 201, resposta rápida, campos preenchidos, data válida e showtimes não vazios.
+#### POST Movies - Esse teste verifica status 201, resposta rápida, campos preenchidos, data válida e showtimes não vazios.
 ![Teste automatizado](../../assets/testPostMovie.png)
 
 ---
-##### GET Movies - Esse teste verifica status 200, resposta não vazia e tempo inferior a 200ms.
+#### GET Movies - Esse teste verifica status 200, resposta não vazia e tempo inferior a 200ms.
 
 ![Teste automatizado](../../assets/testGetMovie.png)
 
 ---
 
-##### POST Tickets - Esse teste verifica status 201, resposta rápida, IDs preenchidos, valores válidos e showtime no formato ISO 8601.
+#### POST Tickets - Esse teste verifica status 201, resposta rápida, IDs preenchidos, valores válidos e showtime no formato ISO 8601.
 
 ![Teste automatizado](../../assets/testPostTicket.png)
 
 ---
 
-##### GET Tickets - Esse teste verifica se a API retorna status 200, resposta não vazia e tempo inferior a 200ms.
+#### GET Tickets - Esse teste verifica se a API retorna status 200, resposta não vazia e tempo inferior a 200ms.
 ![Teste automatizado](../../assets/testGetTicket.png)
 
 ---
 ### 🐞 Bugs Encontrados:
 
-##### Foi possível criar filmes com o mesmo título e outras informações, embora isso não devesse ser permitido.
+#### Foi possível criar filmes com o mesmo título e outras informações, embora isso não devesse ser permitido.
 
 ![Bug Movies](../../assets/Bug.png)
 
 ---
 
-##### Foi possível cadastrar um ticket faltando o "movieID".
+#### Foi possível cadastrar um ticket faltando o "movieID".
 
 ![Bug Tickets](../../assets/movieID.png)
 
 ---
 
-##### Foi possível cadastrar um ticket faltando o "userID".
+#### Foi possível cadastrar um ticket faltando o "userID".
 
 ![Bug Tickets](../../assets/userID.png)
 
