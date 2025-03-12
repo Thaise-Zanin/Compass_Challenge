@@ -1,5 +1,6 @@
 import { sleep } from 'k6';
 import { BaseChecks, BaseRest, ENDPOINTS, testConfig } from '../../../support/base/baseTest.js'
+import { htmlReport } from 'https://raw.githubusercontent.com/benc-uk/k6-reporter/main/dist/bundle.js';
 
 const base_uri = testConfig.environment.hml.cinema;
 const baseRest = new BaseRest(base_uri);
@@ -10,14 +11,22 @@ export const options = {
     thresholds: testConfig.putMovies
 }
 
+export function handleSummary(data) {
+    return {
+        "PutMovies.html": htmlReport(data),
+    };
+}
+
 export function setup() {
     const addMovie = {
         title: "O Enigma do Tempo",
         description: "Um cientista descobre um portal para o passado, mas cada viagem altera o futuro de forma imprevisível.",
-        launchdate: "2025-06-15", 
-        showtimes: ["16:30", "21:00"]
+        launchdate: "2025-03-27T00:39:33.512Z", 
+        showtimes: [
+            "2025-03-31T11:16:51.820Z",
+            "2025-05-09T10:46:27.857Z"      
+        ]
     }  
-
 
 const createRes = baseRest.post(ENDPOINTS.MOVIES_ENDPOINT, addMovie);
 
@@ -42,13 +51,16 @@ export default (data) => {
     const updatedMovie = {
         title: "Aventura no Reino Encantado",
         description: "Um grupo de animais mágicos embarca em uma jornada para salvar seu reino das forças sombrias que ameaçam destruí-lo.",
-        launchdate: "2025-07-22",
-        showtimes: ["10:00", "15:30"]
+        launchdate: "2025-04-10T04:23:12.266Z",
+        showtimes: [
+            "2025-04-09T04:00:03.162Z",
+            "2025-03-31T16:36:54.532Z"
+        ]
     };
 
     const putRes = baseRest.put(`${ENDPOINTS.MOVIES_ENDPOINT}/${movieId}`, updatedMovie);
     
-    baseChecks.checkStatusCode(putRes, 200);
+    baseChecks.checkStatusCode(putRes, 201);
     baseChecks.checkResponseTime(putRes, 1000);
     baseChecks.checkResponseNotEmpty(putRes);
 };

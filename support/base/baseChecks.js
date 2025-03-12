@@ -17,6 +17,13 @@ export class BaseChecks {
         check(response, {
             'Tempo de resposta dentro do esperado': (r) => r.timings.duration <= maxTime,
         });
+
+    }
+
+    checkResponseBody(response, expectedContent) {
+        check(response, {
+            "Verificação do corpo da resposta": (r) => r.body.includes(expectedContent),
+        });
     }
 
     checkResponseNotEmpty(response) {

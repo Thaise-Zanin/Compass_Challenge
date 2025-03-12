@@ -10,10 +10,10 @@ for (let i = 0; i < quantidade; i++) {
     const filme = {
         title: faker.lorem.words(3),
         description: faker.lorem.sentence(),
-        launchdate: faker.date.past({ years: 10 }).toISOString().split('T')[0], 
+        launchdate: faker.date.soon({ days: 60 }).toISOString(), 
         showtimes: [
-            faker.helpers.arrayElement(['14:00', '16:30', '19:00', '21:30']),
-            faker.helpers.arrayElement(['14:00', '16:30', '19:00', '21:30'])
+            faker.date.soon({ days: 60 }).toISOString(),
+            faker.date.soon({ days: 60 }).toISOString()
         ]
     };
     movies.push(filme);

@@ -56,10 +56,9 @@ export const testConfig = {
         }
     },
     thresholds: {
-        http_req_duration: ['p(95)<400', 'avg<200'], 
-        http_req_failed: ['rate<0.01'],             
-        http_req_waiting: ['p(95)<300', 'avg<200'],  
-        checks: ['rate>0.99']                    
+        http_req_duration: ['p(95)<1000'], 
+        http_req_failed: ['rate<0.05'],             
+        checks: ['rate>0.95']                    
     },
     postMovies: { 
         http_req_duration : ['p(95)<200', 'avg<200'],

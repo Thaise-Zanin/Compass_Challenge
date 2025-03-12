@@ -173,18 +173,52 @@ Apresentação final.
 ![DELETE Tickets](../../assets/deleteTickets.png)
 
 ---
+### ⚙️ Testes Automatizados:
+
+##### POST Movies - Esse teste verifica status 201, resposta rápida, campos preenchidos, data válida e showtimes não vazios.
+![Teste automatizado](../../assets/testPostMovie.png)
+
+---
+##### GET Movies - Esse teste verifica status 200, resposta não vazia e tempo inferior a 200ms.
+
+![Teste automatizado](../../assets/testGetMovie.png)
+
+---
+
+##### POST Tickets - Esse teste verifica status 201, resposta rápida, IDs preenchidos, valores válidos e showtime no formato ISO 8601.
+
+![Teste automatizado](../../assets/testPostTicket.png)
+
+---
+
+##### GET Tickets - Esse teste verifica se a API retorna status 200, resposta não vazia e tempo inferior a 200ms.
+![Teste automatizado](../../assets/testGetTicket.png)
+
+---
 ### 🐞 Bugs Encontrados:
 
-Foi possível criar filmes com o mesmo título e outras informações, embora isso não devesse ser permitido.
+##### Foi possível criar filmes com o mesmo título e outras informações, embora isso não devesse ser permitido.
 
 ![Bug Movies](../../assets/Bug.png)
+
+---
+
+##### Foi possível cadastrar um ticket faltando o "movieID".
+
+![Bug Tickets](../../assets/movieID.png)
+
+---
+
+##### Foi possível cadastrar um ticket faltando o "userID".
+
+![Bug Tickets](../../assets/userID.png)
 
 ---
 ### ✅ Sugestão de Melhorias:
 
 - **Evitar Duplicações:** Implementar uma verificação para impedir o cadastro de filmes duplicados e retornar um erro **409 Conflict** em caso de dados idênticos.
 
-- **Confirmação de Exclusão:** Ao excluir um filme, o sistema deve retornar o **status 204 No Content**, acompanhado de uma mensagem de confirmação no corpo da resposta.
+- **Mensagem de Exclusão:** Ao excluir um filme, o sistema deve retornar o **status 204 No Content**, acompanhado de uma mensagem de confirmação no corpo da resposta.
 
 - **Mensagens de Confirmação:** Incluir mensagens de confirmação no corpo da resposta para criação de filmes e erros.
 
@@ -195,4 +229,4 @@ Foi possível criar filmes com o mesmo título e outras informações, embora is
 
 ---
 
-![Gráfico](../../assets/Grafico.png)
+![Gráfico](../../assets/QAlity.png)

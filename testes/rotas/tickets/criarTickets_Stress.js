@@ -2,7 +2,7 @@ import { sleep } from 'k6';
 import { SharedArray } from 'k6/data';
 import { BaseChecks, BaseRest, ENDPOINTS, testConfig } from '../../../support/base/baseTest.js';
 import { randomItem } from 'https://jslib.k6.io/k6-utils/1.2.0/index.js';
-//import { htmlReport } from 'https://raw.githubusercontent.com/benc-uk/k6-reporter/main/dist/bundle.js';
+import { htmlReport } from 'https://raw.githubusercontent.com/benc-uk/k6-reporter/main/dist/bundle.js';
 
 const base_uri = testConfig.environment.hml.cinema;
 const baseRest = new BaseRest(base_uri);
@@ -11,6 +11,12 @@ const baseChecks = new BaseChecks();
 export const options = {
     ...testConfig.options.stress,
     thresholds: testConfig.PostTickets
+}
+
+export function handleSummary(data) {
+    return {
+        "Post Stress.html": htmlReport(data),
+    };
 }
 
 const data = new SharedArray('tickets', function () {
