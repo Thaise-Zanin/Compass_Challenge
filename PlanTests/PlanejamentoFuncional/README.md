@@ -90,9 +90,9 @@ Thaise Chaves Zanin - **QA**
 ---
 ### 📛 Riscos:
 
-- Erros na API: Possibilidade de falhas que causem indisponibilidade ou comportamento inesperado.
+- **Erros na API:** Possibilidade de falhas que causem indisponibilidade ou comportamento inesperado.
 
-- Documentação: Desatualização ou informações insuficientes que prejudiquem o desenvolvimento e manutenção.
+- **Documentação:** Desatualização ou informações insuficientes que prejudiquem o desenvolvimento e manutenção.
 
 ---
 ### ⏱️ Cronograma:
